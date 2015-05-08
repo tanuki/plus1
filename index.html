@@ -1,6 +1,7 @@
 <html>
   <head>
     <title>+1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <script type="text/javascript">
@@ -12,6 +13,47 @@
       }
     </script>
 
-    <input onclick="change()" type="button" value="0" id="butts"></input>
+    <style media="screen">
+      body {
+        text-align: center;
+        text-shadow: 0 1px 0 rgba(0,0,0,.1);
+        background-color: #6f5499;
+        background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+        background-repeat: repeat-x;
+      }
+
+      .btn {
+        display: inline-block;
+
+        padding: 30px 60px;
+        margin-bottom: 0;
+
+        background-color: transparent;
+        background-image: none;
+
+        border: 1px solid #cdbfe3;
+        border-radius: 12px;
+
+        font-size: 40px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 1.3333333;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+
+        touch-action: manipulation;
+        cursor: pointer;
+      }
+
+      .btn:active, .btn:focus, .btn:hover {
+        color: #563d7c;
+        text-shadow: none;
+        background-color: #fff;
+        border-color: #fff;
+      }
+    </style>
+
+    <input onclick="change()" type="button" value="0" id="butts" class="btn"></input>
   </body>
 </html>
